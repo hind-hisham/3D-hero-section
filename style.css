@@ -1,0 +1,69 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+::selection{
+  background-color: rgba(0, 0, 0, 0);
+}
+canvas{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+ 
+}
+main{
+  font-family: 'Russo One', sans-serif;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+main .hero-contant{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: red;
+  text-align: center;
+  cursor: grab;
+}
+.hero-contant h1{
+  font-weight: 900;
+  font-size: 5em;
+  mix-blend-mode:exclusion;
+  letter-spacing: 1.4;
+}
+.hero-contant h3{
+  color: #fff;
+  padding-top: .8em;
+}
+@media (max-width:440px){
+  .hero-contant h1{
+    font-size: 3em;
+    mix-blend-mode:normal; 
+    padding: .6em;
+  }
+  .hero-contant h1 span{
+    font-size:2em ;
+  }
+  .hero-contant h3{
+    font-size: 1.2em;
+    padding: 1em;
+    padding-top: .4em;
+  }
+  section{
+    margin: 30px 0;
+  }
+}
